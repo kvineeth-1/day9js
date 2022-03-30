@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <pre style="color: cornflowerblue;font-size: 19px;">
+
+                Objects are non-priimitive datatype. Objects are key value pairs.
+
+                4 ways to create objects 
+                1)let a={
+
+                }
+                2)Object.create() : which will allows to create an object by taking reference of an existing object.
+                3)Object constructor
+                4)Functional constructor
+
+
+                const obj={
+                    name:"Tom",
+                    age:66,
+                    display:function()  
+                    {
+                        console.log(`His name is ${this.name} and his age is ${this.age}`)
+                    }
+                }
+                obj.display()
+
+
+                const obj2=new Object()
+                obj2.name="Tom"
+                console.group(obj2);
+
+
+                function Employee (name){
+                    this.name = name;
+                   
+                }
+                const Employee1 = new Employee ("Tom");
+                console.log(Employee1)
+
+
+                let newObj = Object.create(Obj);
+                console.log(newObj);
+
+               
+
+
+
+            </pre>
+        </div>
+    </div>
+</body>
+</html>
